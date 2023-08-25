@@ -1,0 +1,67 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class BreadType {
+  + BreadType(Fillings): 
+  # fillings: Fillings
+  + buildBurger(): void
+   fillings: Fillings
+}
+class Burger {
+  + Burger(): 
+  + main(String[]): void
+}
+class Fillings {
+  + Fillings(): 
+  + meatType(): String
+}
+class Fish {
+  + Fish(): 
+  + meatType(): String
+}
+class GranaryRoll {
+  + GranaryRoll(Fillings): 
+  + buildBurger(): void
+}
+class Meat {
+  + Meat(): 
+  + meatType(): String
+}
+class PlainRoll {
+  + PlainRoll(Fillings): 
+  + buildBurger(): void
+}
+class SpicyMeat {
+  + SpicyMeat(): 
+  + meatType(): String
+}
+class Vegan {
+  + Vegan(): 
+  + meatType(): String
+}
+class Veggie {
+  + Veggie(): 
+  + meatType(): String
+}
+class WhiteBread {
+  + WhiteBread(Fillings): 
+  + buildBurger(): void
+}
+
+BreadType   "1" *-[#595959,plain]-> "fillings\n1" Fillings    
+Burger       -[#595959,dashed]->  Fish        : "«create»"
+Burger       -[#595959,dashed]->  PlainRoll   : "«create»"
+Burger       -[#595959,dashed]->  SpicyMeat   : "«create»"
+Burger       -[#595959,dashed]->  WhiteBread  : "«create»"
+Fish         -[#000082,plain]-^  Fillings    
+GranaryRoll  -[#000082,plain]-^  BreadType   
+Meat         -[#000082,plain]-^  Fillings    
+PlainRoll    -[#000082,plain]-^  BreadType   
+SpicyMeat    -[#000082,plain]-^  Fillings    
+Vegan        -[#000082,plain]-^  Fillings    
+Veggie       -[#000082,plain]-^  Fillings    
+WhiteBread   -[#000082,plain]-^  BreadType   
+@enduml
