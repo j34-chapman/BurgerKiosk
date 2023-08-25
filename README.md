@@ -1,11 +1,10 @@
 
 # Burger Kiosk Refactoring Project
 
-Welcome to the Burger Kiosk Refactoring Project repository. This project showcases the refactoring of the Burger Kiosk codebase, guided by principles of design patterns and object-oriented programming. As part of the L5 Software Design & Architecture course assessment, this project demonstrates how applying these principles can lead to improved software design and maintainability.
+Welcome to the Burger Kiosk Refactoring Project repository. This project showcases the refactoring of the Burger Kiosk codebase, guided by principles of design patterns and object-oriented programming. As part of the L5 Software Design & Architecture course assessment, this project demonstrates how applying these principles can lead to improved software design and maintainability. To gain an overview of the improvements made to the Burger Kiosk codebase wathc the video below, I discuss the importance of code being  of the codebase, how design patterns influenced my decisions, and how these changes lead to a more robust and extensible software solution. 
 
-## Video Explanation
+**Watch the Video Demonstration**:  [Watch the Video](https://youtu.be/TbXCT4L7WUk)
 
-To gain an overview of the improvements made to the Burger Kiosk codebase, watch the [Video Explanation](https://www.youtube.com/watch?v=yourvideoid). In this video, I discuss the evolution of the codebase, how design patterns influenced my decisions, and how these changes lead to a more robust and extensible software solution.
 
 ## Knowledge from Study Materials
 
