@@ -1,9 +1,30 @@
 
 # Burger Kiosk Refactoring Project
 
-Welcome to the Burger Kiosk Refactoring Project repository. This project showcases the refactoring of the Burger Kiosk codebase, guided by principles of design patterns and object-oriented programming. As part of the L5 Software Design & Architecture course assessment, this project demonstrates how applying these principles can lead to improved software design and maintainability. To gain an overview of the improvements made to the Burger Kiosk codebase wathc the video below, I discuss the importance of code being  of the codebase, how design patterns influenced my decisions, and how these changes lead to a more robust and extensible software solution. 
+Welcome to the Burger Kiosk Refactoring Project repository. This project highlights the refactoring of the Burger Kiosk code, driven by design pattern principles and object-oriented programming techniques. Serving as a focal point of the L5 Software Design & Architecture course assessment, this project illustrates the benefits of applying these design pattern principles, leading to enhanced software design and maintainability. For a insight into the Burger Kiosk codebase, please watch the video below. In this video, I outline the initial challenges posed by the original code and demonstrate how a well-considered design pattern approach fosters a maintainable and highly cohesive codebase.
+
 
 **Watch the Video Demonstration**:  [Watch the Video](https://youtu.be/TbXCT4L7WUk)
+
+
+## Understanding the Code
+
+#### Original UML
+
+![Original UML](https://github.com/j34-chapman/BurgerKiosk/assets/93520494/c6124dae-0c9e-4bd1-b564-8f4751b058f2)
+
+To appreciate the rationale behind adopting the Bridge Design Pattern, let's start with the original BurgerKiosk UML. The original diagram is intricate, featuring numerous classes heavily reliant on inheritance. However, this approach leads to challenges when extending functionality and adhering to key design principles.
+
+#### Bridge UML
+
+![Bridge UML](https://github.com/j34-chapman/BurgerKiosk/assets/93520494/86ddf5f3-6c6f-4f5f-9069-4e597d1232af)
+
+Recognizing the complexities of the original code, I identified the need for abstraction and implementation hierarchies. This structural shift involves defining interfaces for bread and filling types, while implementing concrete classes for specific variants. This modular approach allows for easier expansion and modification.
+
+The Bridge pattern enhances flexibility by enabling the integration of new bread and filling options without altering existing code. This is achieved through the creation of distinct concrete classes adhering to established interfaces.
+
+In summary, the adoption of the Bridge pattern brings improved maintainability, flexibility, and scalability to the codebase, aligning with fundamental design principles.
+
 
 
 ## Knowledge from Study Materials
