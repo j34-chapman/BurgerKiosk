@@ -16,8 +16,7 @@ Welcome to the Burger Kiosk Refactoring Project repository. This project highlig
 To appreciate the rationale behind adopting the Bridge Design Pattern, let's start with the original BurgerKiosk UML. The original diagram is intricate, featuring numerous classes heavily reliant on inheritance. However, this approach leads to challenges when extending functionality and adhering to key design principles.
 
 #### Bridge UML
-
-![Bridge UML](https://github.com/j34-chapman/BurgerKiosk/assets/93520494/86ddf5f3-6c6f-4f5f-9069-4e597d1232af)
+<img width="1244" alt="Screenshot 2023-08-16 at 15 56 26" src="https://github.com/j34-chapman/BurgerKiosk/assets/93520494/a91302ae-968e-4c9b-8faf-75fae4506424">
 
 Recognizing the complexities of the original code, I identified the need for abstraction (BreadType) and implementation (Fillings) hierarchies. This structural shift involves defining interfaces for various bread and filling types, while implementing distinct classes for specific variants. This modular approach fosters easier expansion and modification, aligning with the principles of low coupling and the Open-Closed Principle (OCP).
 
